@@ -61,8 +61,8 @@ const renderPokemon = async (pokemon) => {
         pokemonAtk.innerHTML = data.stats['1'].base_stat;
         pokemonDef.innerHTML = data.stats['2'].base_stat;
         pokemonHp.innerHTML = data.stats['0'].base_stat;
-        pokemonHei.innerHTML = data.height + 'cm';
-        pokemonWei.innerHTML = data.weight + 'g';
+        pokemonHei.innerHTML = data.height/10 + 'm';
+        pokemonWei.innerHTML = data.weight/10 + 'Kg';
 
         if(shyne){
             pokemonImg.src = data['sprites'].versions['generation-v']['black-white'].animated.front_default;//front_default 

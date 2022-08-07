@@ -99,10 +99,10 @@ form.addEventListener('submit', (event) =>{
 })
 
 btnN.addEventListener('click', ()=>{
-    if(idPokemon != 649){
-        idPokemon++;
-        renderPokemon(idPokemon);
-    }
+    
+    idPokemon++;
+    renderPokemon(idPokemon);
+ 
 })
 
 btnP.addEventListener('click', ()=>{

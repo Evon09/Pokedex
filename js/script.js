@@ -92,17 +92,19 @@ const renderPokemon = async (pokemon) => {
 
 form.addEventListener('submit', (event) =>{
     event.preventDefault();
-    if(search.value.toLowerCase()< 650 ){
-        renderPokemon(search.value.toLowerCase());
-    }
+    
+    renderPokemon(search.value.toLowerCase());
+    
     
 })
 
 btnN.addEventListener('click', ()=>{
     
-    idPokemon++;
-    renderPokemon(idPokemon);
- 
+    if(idPokemon != 649){
+        idPokemon++;
+        renderPokemon(idPokemon);
+    }
+    
 })
 
 btnP.addEventListener('click', ()=>{
